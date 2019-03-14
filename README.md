@@ -160,7 +160,9 @@ Inside of the `handleClick` method on the `Fave` component, use `this.setState` 
 
 <details>
   <summary>Hint - one way to do this could be:</summary>
-  <code>isFave: !this.state.isFave</code>
+  <code>this.setState(prevState => ({
+			isFave:!prevState.isFave
+		}))</code>
 </details>
 
 
